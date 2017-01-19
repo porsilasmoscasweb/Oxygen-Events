@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>HOME | OXYGEN EVENTS |</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/nav.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.fullscreen-min.js"></script>
+
+<script type="text/javascript">
+
+jQuery(function($){
+$.supersized({
+// Functionality
+slide_interval          :   4000,		// Length between transitions
+transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+transition_speed		:	1000,		// Speed of transition
+										   
+// Components							
+slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+slides 					:  	[			// Slideshow Images
+{image : 'img/onWater/1.jpg', title : '', thumb : '', url : ''},
+{image : 'img/onWater/2.jpg', title : '', thumb : '', url : ''},
+{image : 'img/onWater/3.jpg', title : '', thumb : '', url : ''},		] 
+	});
+});
+		    
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+        $("#supersized").mouseover(function(){$(".text").slideUp("slow")});
+		$("#supersized").mouseover(function(){$("#mostrar").slideDown(10)});
+		$("#supersized").mouseover(function(){$("#ocultar").slideUp(10)});
+        $(".title").mouseover(function(){$(".text").slideDown("slow")});
+        $(".title").mouseover(function(){$("#ocultar").slideDown(10)});
+		$(".title").mouseover(function(){$("#mostrar").slideUp(10)});
+});
+</script>
+
+</head>
+
+<body>
+
+<nav> 
+<ul id="menu" class="nav">
+	<li id="logo" class="logo"><a href="filosofia.html" title=""><img src="img/logo.png" alt="" title="" width="80"/></a></li>
+        <li class="subnav"><a href="eventos-incentivos.html" title="">EVENTOS E INCENTIVOS</a>
+        	<ul>
+                <li><a href="barcelona.html">BARCELONA</a></li>
+                <li><a href="oxygen-en-agua.html">OXYGEN EN AGUA</a></li>
+                <li><a href="oxygen-en-tierra.html">OXYGEN EN TIERRA</a></li>
+                <li><a href="oxygen-en-fuego.html">OXYGEN EN FUEGO</a></li>
+                <li><a href="oxygen-en-aire.html">OXYGEN EN AIRE</a></li>
+	        </ul>
+        </li>
+        <li><a href="clientes.html" title="">CLIENTES</a></li>
+        <li><a href="contacto.php" title="">OXYGEN CONTACTO</a></li>
+        <li class="idiomes" style="top:2px;"><a href="http://www.youtube.com/watch?v=ZF8lJ6V9KcA&feature=youtu.be" target="_blank" title=""><img src="img/youtube.png" width="30"/></a></li>
+        <li class="idiomes"><a href="oxygen-on-water.html" title="">ENG</a></li>
+        <li class="idiomes"><a href="" title="">ESP</a></li>
+</ul>
+</nav>
+
+<div class="fullscreenPage">
+<button onclick="$(document).fullScreen(true)" class="on"></button>
+<button onclick="$(document).fullScreen(false)" class="off"></button>
+</div>
+
+<div id="content">
+
+	<div class="title">
+        <h1>oxygen en agua</h1>
+		<div class="show">
+        <div id="ocultar"></div><div id="mostrar"></div>
+		</div>
+	</div>
+
+	<div class="text">
+	<ul>
+    	<li>
+            <p><b>Actividades para disfrutar</b></p>
+            <p>Nuestro equipo internacional diseñará actividades a medida para tu grupo. Disfrutaréis de todo tipo de actividades deportivas a disposición, en un ambiente relajado: catamaranes, windsurf, kayak, SUP (paddle  surf), voley playa, fútbol playa, juegos en la arena, tai-chi, yoga, capoeira, wakeboard,….</p>
+        </li>
+        <li>    
+            <p>Casi todo lo que imagines se puede realizar en una playa fantástica con un paisaje espectacular. En este marco desarrollaremos dinámicas de trabajo en equipo con la finalidad de que podáis mejorar como grupo.</p>
+
+            <p>¿Qué se te ocurre? Cuéntanoslo y nos pondremos manos a la obra. </p>
+            
+            <p><b>Obras son amores y no buenas razones</b></p>
+        </li>
+	</ul>
+    </div>
+
+</div>      
+
+</body>
+</html>

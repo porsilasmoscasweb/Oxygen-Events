@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>HOME | OXYGEN EVENTS |</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/nav.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.fullscreen-min.js"></script>
+
+<script type="text/javascript">
+
+jQuery(function($){
+$.supersized({
+// Functionality
+slide_interval          :   4000,		// Length between transitions
+transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+transition_speed		:	1000,		// Speed of transition
+										   
+// Components							
+slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+slides 					:  	[			// Slideshow Images
+{image : 'img/onAir/1.jpg', title : '', thumb : '', url : ''},
+{image : 'img/onAir/2.jpg', title : '', thumb : '', url : ''},
+{image : 'img/onAir/3.jpg', title : '', thumb : '', url : ''},		] 
+	});
+});
+		    
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+        $("#video").click(function(){$("#video").slideUp(300)});
+		$("#supersized").click(function(){$(".text").slideUp(300)});
+        $(".title").click(function(){$(".text").slideToggle("slow")});
+});
+</script>
+
+</head>
+
+<body>
+
+<nav> 
+<ul id="menu" class="nav">
+	<li id="logo" class="logo"><a href="index.html" title=""><img src="img/logo.png" alt="" title="" width="80"/></a></li>
+	    <li><a href="index.html" title="">OUR PHILOSOPHY</a></li>
+        <li class="subnav"><a href="" title="">EVENTS & INCENTIVES</a>
+        	<ul>
+                <li><a href="events-incentives.html">GOALS</a></li>
+                <li><a href="oxygen-on-barcelona.html">BARCELONA</a></li>
+                <li><a href="oxygen-on-water.html">OXYGEN ON WATER</a></li>
+                <li><a href="oxygen-on-earth.html">OXYGEN ON EARTH</a></li>
+                <li><a href="oxygen-on-fire.html">OXYGEN ON FIRE</a></li>
+                <li><a href="oxygen-on-air.html">OXYGEN ON AIR</a></li>
+	        </ul>
+        </li>
+        <li><a href="companies.html" title="">OXYGENED COMPANIES</a></li>
+        <li><a href="contact.php" title="">OXYGEN CONTACT</a></li>
+        
+        
+        <li class="idiomes"><a href="" title=""><span class="EN"></span>ENG</a></li>
+        <li class="idiomes"><a href="oxygen-en-aire.html" title=""><span class="ES"></span>ESP</a></li>
+        <li class="idiomes"><a href="oxygen-dans-air.html" title=""><span class="FR"></span>FRA</a></li>
+</ul>
+</nav>
+
+<div class="fullscreenPage">
+<button onclick="$(document).fullScreen(true)" class="on"></button>
+<button onclick="$(document).fullScreen(false)" class="off"></button>
+</div>
+
+<div id="content">
+
+	<div class="title">
+        <h1>oxygen on air</h1>
+		<div class="show">
+        <div id="ocultar"></div><div id="mostrar"></div>
+		</div>
+	</div>
+
+	<div class="text">
+	<ul>
+    	<li>
+        	<p><b>Catering & Parties</b></p>
+            
+            <p>It is time to relax and have fun. A well done work deserves a special moment to remember. It is the perfect moment to enjoy our menus with all the wonders of the Mediterranean, next to the sea, while the DJ plays soft chill-out music.</p> 
+            
+            <p>Emotions make people come together, looking things with the same eyes.</p>
+         </li>
+         <li>   
+            <p>Impressions make your event achieve its goal, that message you want to comunicate.</p>
+            
+            <p>You may enjoy our shows during the meal or our parties after supper.</p>
+            
+            <p>We have different thematic events for you: White Party– Ibiza Style, Pirate Meeting, Brazilian Dancing, Hawaiian Fun or Sensual Arabian Night. And the most important is in the details: we provide performances of all kind, drinks and cocktails, well-known</p>
+         </li>
+         <li>   
+            <p>DJ's will play for you and you will have fun in a place specially decorated for the event, recreating the magic and the fantasy of the Mediterranean and ensuring an authentic beach athmosphere.</p>
+            
+            <p><b>We told you, the last moments will be as important as the first.</b></p>
+        </li>
+	</ul>
+    </div>
+
+</div>      
+
+<div class="social">
+	<a class="face" href="http://www.facebook.com/despedidasoxygenevents/timeline" target="facebook"></a>
+    <a class="twitter" href="http://twitter.com/OxygenEventsBS" target="twitter"></a>
+    <a class="plus" href="http://plus.google.com/u/0/b/102772411148550373922/" target="linkedin"></a>
+    <a class="link" href="http://www.linkedin.com/company/oxygen-events-bs" target="plus"></a>
+    <a class="you" href="http://www.youtube.com/user/oxygeneventsbcn" target="youtube"></a>
+</div> 
+
+</body>
+</html>

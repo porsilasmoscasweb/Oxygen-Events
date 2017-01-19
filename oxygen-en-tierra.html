@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>HOME | OXYGEN EVENTS |</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/nav.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.fullscreen-min.js"></script>
+
+<script type="text/javascript">
+
+jQuery(function($){
+$.supersized({
+// Functionality
+slide_interval          :   4000,		// Length between transitions
+transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+transition_speed		:	1000,		// Speed of transition
+										   
+// Components							
+slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+slides 					:  	[			// Slideshow Images
+{image : 'img/onEarth/1.jpg', title : '', thumb : '', url : ''},
+{image : 'img/onEarth/2.jpg', title : '', thumb : '', url : ''},
+{image : 'img/onEarth/3.jpg', title : '', thumb : '', url : ''},		] 
+	});
+});
+		    
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+        $("#video").click(function(){$("#video").slideUp(300)});
+		$("#supersized").click(function(){$(".text").slideUp(300)});
+        $(".title").click(function(){$(".text").slideToggle("slow")});
+});
+</script>
+
+</head>
+
+<body>
+
+<nav> 
+<ul id="menu" class="nav">
+	<li id="logo" class="logo"><a href="filosofia.html" title=""><img src="img/logo.png" alt="" title="" width="80"/></a></li>
+    	<li><a href="nuestrosPacks.html" title="">NUESTROS PACKS</a></li>
+        <li class="subnav"><a href="" title="">EVENTOS E INCENTIVOS</a>
+        	<ul>
+                <li><a href="eventos-incentivos.html">OBJETIVOS</a></li>
+                <li><a href="barcelona.html">BARCELONA</a></li>
+                <li><a href="oxygen-en-agua.html">OXYGEN EN AGUA</a></li>
+                <li><a href="oxygen-en-tierra.html">OXYGEN EN TIERRA</a></li>
+                <li><a href="oxygen-en-fuego.html">OXYGEN EN FUEGO</a></li>
+                <li><a href="oxygen-en-aire.html">OXYGEN EN AIRE</a></li>
+	        </ul>
+        </li>
+        <li><a href="clientes.html" title="">CLIENTES</a></li>
+        <li><a href="contacto.php" title="">OXYGEN CONTACTO</a></li>
+        
+        
+        <li class="idiomes"><a href="oxygen-on-earth.html" title=""><span class="EN"></span>ENG</a></li>
+        <li class="idiomes"><a href="" title=""><span class="ES"></span>ESP</a></li>
+        <li class="idiomes"><a href="oxygen-dans-la-terre.html" title=""><span class="FR"></span>FRA</a></li>
+</ul>
+</nav>
+
+<div class="fullscreenPage">
+<button onclick="$(document).fullScreen(true)" class="on"></button>
+<button onclick="$(document).fullScreen(false)" class="off"></button>
+</div>
+
+<div id="content">
+
+	<div class="title">
+        <h1>oxygen en tierra</h1>
+		<div class="show">
+        <div id="ocultar"></div><div id="mostrar"></div>
+		</div>
+	</div>
+
+	<div class="text">
+	<ul>
+    	<li>
+            <p><b>Una alternativa ecológica en el campo de la organización de eventos.</b></p>
+
+            <p>Estamos comprometidos ecológicamente con el planeta. Por eso aplicamos el Corporate Social Responsability (CSR) en nuestra política y en nuestra forma de trabajar.</p>
+            <p>Somos conscientes del tema de que todos nuestros proyectos deben ser sostenibles,  por lo que nuestras actividades respetan el medio ambiente, reduciendo las emisiones de CO2, manteniendo la misma calidad para nuestros clientes.</p>
+        </li>
+        <li>    
+        	<p><b>« Respetando el planeta nos respetamos a nosotros mismos ».</b> (Madalena Trabuco)</p>
+            <p>Por otro lado, en nuestro restaurante servimos comida de temporada. Aquí, podréis disfrutar de lo mejorcito de la cocina catalana con un amplio surtido de platos cocinados con ingredientes especialmente seleccionados, desde el aceite de Arbequina a los vinos con D.O., pasando por las legumbres, los champiñones, quesos, aves, …así como una amplia oferta de pescados (sardinas, anchoas, atún, bacalao, dorada, lubina, salmón, …).</p> 
+        </li>
+        <li> 
+        	<p>Y no nos olvidamos de nuestras ensaladas, de nuestra paella, de los aperitivos, las parrilladas de carne o pescado,…</p>
+            <p>Y en el caso que nuestro restaurante esté completo, trabajamos en colaboración con otros 2 restaurantes frente al mar a los que puedes ir a pie desde nuestras instalaciones.</p>
+            
+            <p><b>« Las palabras son enanos, pero los ejemplos son gigantes ».</b> (Proverbe suisse)</p>
+        </li>
+	</ul>
+    </div>
+
+</div>      
+
+<div class="social">
+	<a class="face" href="http://www.facebook.com/despedidasoxygenevents/timeline" target="facebook"></a>
+    <a class="twitter" href="http://twitter.com/OxygenEventsBS" target="twitter"></a>
+    <a class="plus" href="http://plus.google.com/u/0/b/102772411148550373922/" target="linkedin"></a>
+    <a class="link" href="http://www.linkedin.com/company/oxygen-events-bs" target="plus"></a>
+    <a class="you" href="http://www.youtube.com/user/oxygeneventsbcn" target="youtube"></a>
+</div> 
+
+</body>
+</html>

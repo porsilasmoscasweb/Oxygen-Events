@@ -1,0 +1,55 @@
+* { margin:0; padding:0; }
+body { background:#111; height:100%; }
+img { border:none; }
+
+/*---------scroll bar-----------*/
+::-webkit-scrollbar{margin-right:5px;background-color:#ccc;width:10px; box-shadow:2px 2px 3px #999 inset;}
+::-webkit-scrollbar-track{-webit-box-shadow:0 0 2px #ccc;box-shadow:0 0 2px #ccc;}
+::-webkit-scrollbar-thumb{border:1px #ccc solid;background:#777;-webit-box-shadow:0 0 3px #666;box-shadow:0 0 3px #666inset;-webit-transition:all .3s ease-out;transition:all .3s ease-out;}::-webkit-scrollbar-thumb:window-inactive{background:#bbb;box-shadow:0 0 8px #999 inset;}
+::-webkit-scrollbar-thumb:hover{background:#999;}
+
+#supersized-loader { position:absolute; top:50%; left:50%; z-index:0; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background:url(../img/progress.gif) no-repeat center center;}
+
+#supersized {  display:block; position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; }
+#supersized img { width:auto; height:auto; position:relative; display:none; outline:none; border:none; }
+#supersized.speed img { -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges; }	/*Speed*/
+#supersized.quality img { -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }			/*Quality*/
+
+#supersized li { display:block; list-style:none; z-index:-30; position:fixed; overflow:hidden; top:0; left:0; width:100%; height:100%; background:#111; }
+#supersized a { width:100%; height:100%; display:block; }
+#supersized li.prevslide { z-index:-20; }
+#supersized li.activeslide { z-index:-10; }
+#supersized li.image-loading { background:#111 url(../img/progress.gif) no-repeat center center; width:100%; height:100%; }
+#supersized li.image-loading img{ visibility:hidden; }
+#supersized li.prevslide img, #supersized li.activeslide img{ display:inline; }
+
+/* FULLSCREEN */
+.fullscreenPage{position:absolute; float:right; width:50px; height:35px; bottom:0px; right:10px; padding:0;}
+.on{ border:none; width:20px; height:20px; margin-right:0px; padding:0px; background: url(../img/fullscreen.jpg) no-repeat;}
+.off{ border:none; width:20px; height:20px; margin:0; padding:0px; background: url(../img/fullscreenOff.jpg) no-repeat;}
+
+
+#content {position:absolute; width:100%; height:auto; top:48px; font:12pt/11pt "Trebuchet MS", Arial, Helvetica, sans-serif; z-index:20;}
+.title{background:rgba(255,255,255,0.8);  padding:10px 0; margin-bottom:3px; height:30px; }
+h1{position:absolute; margin:0 50px; font:20pt 'Trebuchet MS', Arial, Helvetica, sans-serif;font-weight:bold; text-transform:uppercase; float:left;}
+
+.show{ position:absolute; width:20px; height:20px; top:15px; left:15px; padding:0;}
+#ocultar{ background:url(../img/down.jpg) no-repeat; width:20px; height:20px; display:none;}
+#mostrar{background:url(../img/up.jpg) no-repeat; width:20px; height:20px;}
+
+.text{background:rgba(255,255,255,0.8); font:10pt/14pt "Trebuchet MS", Arial, Helvetica, sans-serif; padding:20px; display:none; overflow:auto; height:auto;}
+.text ul{list-style-type:none}
+.text ul li { position:relative; float:left; width:25%;}
+.text ul li p { padding:5px;}
+.text ul li p span{ padding:5px; font:12pt/16pt "Trebuchet MS", Arial, Helvetica, sans-serif;; float:left; margin-right: 20px; text-transform:uppercase; font-weight:bold;}
+.text ul li p a{ text-decoration:none; color:#000}
+.text ul li p a:hover{ text-decoration:underline; color:#999}
+.text ul li img{position:relative; float:left; width:60px; height:60px; padding:10px;}
+.text ul li h5{margin:0 10px; font:14pt/25pt 'Trebuchet MS', Arial, Helvetica, sans-serif;font-weight:bold; text-transform:uppercase;}
+
+/* HOME */
+#video{overflow:hidden;position:fixed;height:100%;width:100%;top:0;left:0; z-index:100; overflow:hidden; background:#000;}
+
+.logoVideo{position:absolute; width:100%; height:310px; text-align:center; top:25%; opacity:0.7; z-index:100;}
+.logoVideo {text-decoration:none; font:18pt "Trebuchet MS", Arial, Helvetica, sans-serif; letter-spacing:7pt; cursor:default; color:#FFF;}
+.logoVideo p{ border-bottom:1px solid #fff; border-top:1px solid #fff; width:220px; margin:0 auto; padding:10px 0 10px 5px; text-transform:uppercase; cursor:url(../img/cancel.png),url(myBall.cur),auto;}

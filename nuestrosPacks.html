@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>HOME | OXYGEN EVENTS |</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/nav.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.fullscreen-min.js"></script>
+
+<script type="text/javascript">
+
+jQuery(function($){
+$.supersized({
+// Functionality
+slide_interval          :   4000,		// Length between transitions
+transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+transition_speed		:	1000,		// Speed of transition
+										   
+// Components							
+slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+slides 					:  	[			// Slideshow Images
+{image : 'img/home/1.jpg', title : '', thumb : '', url : ''},
+{image : 'img/home/2.jpg', title : '', thumb : '', url : ''},
+{image : 'img/home/3.jpg', title : '', thumb : '', url : ''},		] 
+	});
+});
+		    
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+		$("#supersized").click(function(){$(".text").slideUp(300)});
+        $(".title").click(function(){$(".text").slideToggle("slow")});
+});
+</script>
+
+</head>
+
+<body>
+
+<nav> 
+<ul id="menu" class="nav">
+	<li id="logo" class="logo"><a href="filosofia.html" title=""><img src="img/logo.png" alt="" title="" width="80"/></a></li>
+        <li><a href="nuestrosPacks.html" title="">NUESTROS PACKS</a></li>
+        <li class="subnav"><a href="" title="">EVENTOS E INCENTIVOS</a>
+        	<ul>
+                <li><a href="eventos-incentivos.html">OBJETIVOS</a></li>
+                <li><a href="barcelona.html">BARCELONA</a></li>
+                <li><a href="oxygen-en-agua.html">OXYGEN EN AGUA</a></li>
+                <li><a href="oxygen-en-tierra.html">OXYGEN EN TIERRA</a></li>
+                <li><a href="oxygen-en-fuego.html">OXYGEN EN FUEGO</a></li>
+                <li><a href="oxygen-en-aire.html">OXYGEN EN AIRE</a></li>
+	        </ul>
+        </li>
+        <li><a href="clientes.html" title="">CLIENTES</a></li>
+        <li><a href="contacto.php" title="">OXYGEN CONTACTO</a></li>
+
+        <li class="idiomes"><a href="index.html" title=""><span class="EN"></span>ENG</a></li>
+        <li class="idiomes"><a href="" title=""><span class="ES"></span>ESP</a></li>
+        <li class="idiomes"><a href="philosophie.html" title=""><span class="FR"></span>FRA</a></li>
+</ul>
+</nav>
+
+<div class="fullscreenPage">
+<button onclick="$(document).fullScreen(true)" class="on"></button>
+<button onclick="$(document).fullScreen(false)" class="off"></button>
+</div>
+
+<div id="content">
+
+	<div class="title">
+        <h1>Nuestros Packs</h1>
+		<div class="show">
+        <div id="ocultar"></div><div id="mostrar"></div>
+		</div>
+	</div>
+
+	<div class="text">
+	<ul>
+    	<li>
+        <p><b>OXYGEN EVENTS</b> diseña, organiza y produce eventos deportivos y lúdicos para empresas y grupos durante todo el año. Disponemos de un entorno natural e instalaciones frente al mar de fácil acceso desde Barcelona (18 minutos) o el aeropuerto (10 minutos).</p>
+        </li>
+        <li>
+        <p><b>A continuación detallamos algunas de nuestras propuestas para actividades de incentivo y "team building":</b></p>
+        
+        <i>
+        <p>• Pack Incentive Basic, 39 Euros/ Pax, 2 horas de actividades de incentivo "light" y trabajo en equipo en la arena.
+    	</p>
+        <p>• Pack Incentive Plus, 49 Euros/ Pax, 3 horas de espíritu de equipo con actividades en el mar y en la arena.
+    	</p>
+        <p>• Pack Incentive Premium, 59 Euros/ Pax, 3 horas de trabajo de motivación y cohesión del grupo.
+    	</p>
+        </i>
+        </li>
+        <li>
+        <p><b>Más ejemplos de actividades:</b></p>
+        <i>
+        <p>• Excursión en Kayak y/o Paddle Surf.</p>
+        <p>• Regata de Catamaranes.</p>
+        <p>• Taller de Kitesurf + BBQ.</p>
+        <p>• Pack Romántico para parejas con/sin niños.</p>
+        <p>• Pack Bautismos para descubrir/practicar 4 deportes en 2 días.</p>
+        <p>• Paseo en Velero.</p>
+        </i>
+        </li>
+        <li>
+        <p><b>Necesitas otra propuesta?</b></p>
+        <p>Cuéntanos tu idea a: <b><a href="mailto:events@oxygenevents.es">events@oxygenevents.es</a></b></p>
+        <p></p>
+        <p></p>
+        <p><b style=" text-transform:uppercase;"><a href="img/PacksGrupos.pdf">Descargar documento completo Packs Oxygen Events.</a></b></p>
+        </li>
+	</ul>
+    </div>
+    
+</div>      
+
+<div class="social">
+	<a class="face" href="http://www.facebook.com/despedidasoxygenevents/timeline" target="facebook"></a>
+    <a class="twitter" href="http://twitter.com/OxygenEventsBS" target="twitter"></a>
+    <a class="plus" href="http://plus.google.com/u/0/b/102772411148550373922/" target="linkedin"></a>
+    <a class="link" href="http://www.linkedin.com/company/oxygen-events-bs" target="plus"></a>
+    <a class="you" href="http://www.youtube.com/user/oxygeneventsbcn" target="youtube"></a>
+</div> 
+
+</body>
+</html>

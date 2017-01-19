@@ -1,0 +1,27 @@
+/* Main menu */
+.nav{position:fixed;left:0; top:0;width: 100%;margin: 0;padding: 10px 0 0 0;list-style: none;  background:rgba(0,0,0,1); z-index:1000;}
+.nav li{ position:relative; float: left; width:auto; padding: 0 0 10px 0; line-height: 0;}
+.nav a {position:relative; float: left; width:auto; height: 25px;padding: 0 10px;color: #fff;text-transform: uppercase; font:normal 10pt/21pt "Trebuchet MS", Arial, Helvetica, sans-serif; text-decoration: none;}
+.nav li:hover > a{color: #fafafa;}
+
+/* IE6 */*html .nav li a:hover {color: #fafafa;}
+.nav li:hover > ul{display: block;}
+
+/* Sub-menu */
+.nav ul{list-style: none; margin:0; padding: 0; display: none; position: absolute; top: 35px; left: 0;}
+.nav ul ul{top: 0;left: 150px;}
+.nav ul li{float: none; margin:2px 0;padding: 0;display: block;  background:rgba(0,0,0,.8);}
+
+.nav ul a{padding:5px 10px 3px 10px; height: auto; width: 130px;height: auto; font:normal 10pt/20pt "Trebuchet MS", Arial, Helvetica; display:block; white-space:nowrap; float:none;}
+
+/* IE6 */*html .nav ul a { height: 10px;}
+/* IE7 */*:first-child+html .nav ul a { height: 10px;}
+
+/* Clear floated elements */
+.nav:after{visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+
+* html .nav             { zoom: 1; } /* IE6 */
+*:first-child+html .nav { zoom: 1; } /* IE7 */
+
+.nav li.idiomes {position:relative;float:right; font:normal 12pt/21pt "Trebuchet MS", Arial, Helvetica, sans-serif; text-decoration: none;}
+.nav li.logo a{ left:0px; top:-7px;}

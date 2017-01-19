@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>HOME | OXYGEN EVENTS |</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/nav.css" type="text/css" media="screen" />
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.fullscreen-min.js"></script>
+
+<script type="text/javascript">
+
+jQuery(function($){
+$.supersized({
+// Functionality
+slide_interval          :   4000,		// Length between transitions
+transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+transition_speed		:	1000,		// Speed of transition
+										   
+// Components							
+slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+slides 					:  	[			// Slideshow Images
+{image : 'img/home/1.jpg', title : '', thumb : '', url : ''},
+{image : 'img/home/2.jpg', title : '', thumb : '', url : ''},
+{image : 'img/home/3.jpg', title : '', thumb : '', url : ''},		] 
+	});
+});
+		    
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+		$("#video").click(function(){$("#video").slideUp(300)});
+        $("#supersized").mouseover(function(){$(".text").slideUp("slow")});
+		$("#supersized").mouseover(function(){$("#mostrar").slideDown(10)});
+		$("#supersized").mouseover(function(){$("#ocultar").slideUp(10)});
+        $(".title").mouseover(function(){$(".text").slideDown("slow")});
+        $(".title").mouseover(function(){$("#ocultar").slideDown(10)});
+		$(".title").mouseover(function(){$("#mostrar").slideUp(10)});
+});
+</script>
+
+</head>
+
+<body>
+
+<nav> 
+<ul id="menu" class="nav">
+	<li id="logo" class="logo"><a href="filosofia.html" title=""><img src="img/logo.png" alt="" title="" width="80"/></a></li>
+        <li class="subnav"><a href="eventos-incentivos.html" title="">EVENTOS E INCENTIVOS</a>
+        	<ul>
+                <li><a href="barcelona.html">BARCELONA</a></li>
+                <li><a href="oxygen-en-agua.html">OXYGEN EN AGUA</a></li>
+                <li><a href="oxygen-en-tierra.html">OXYGEN EN TIERRA</a></li>
+                <li><a href="oxygen-en-fuego.html">OXYGEN EN FUEGO</a></li>
+                <li><a href="oxygen-en-aire.html">OXYGEN EN AIRE</a></li>
+	        </ul>
+        </li>
+        <li><a href="clientes.html" title="">CLIENTES</a></li>
+        <li><a href="contacto.php" title="">OXYGEN CONTACTO</a></li>
+        <li class="idiomes" style="top:2px;"><a href="http://www.youtube.com/watch?v=ZF8lJ6V9KcA&feature=youtu.be" target="_blank" title=""><img src="img/youtube.png" width="30"/></a></li>
+        <li class="idiomes"><a href="index.html" title="">ENG</a></li>
+        <li class="idiomes"><a href="" title="">ESP</a></li>
+</ul>
+</nav>
+
+<div class="fullscreenPage">
+<button onclick="$(document).fullScreen(true)" class="on"></button>
+<button onclick="$(document).fullScreen(false)" class="off"></button>
+</div>
+
+<div id="video">
+    <div id="logoVideo" class="logoVideo"><img src="img/logoVideo.png"/><p>view home</p></a></div>
+    <!--
+    <object width="100%" height="100%">
+    <param name="movie" value="http://www.youtube.com/v/X8nfBzeKCAw"></param>
+    <param name="wmode" value="transparent"></param>
+    <param name="allowScriptAccess" value="always">
+    <param name="allowFullScreen" value="true">
+    <embed src="http://www.youtube.com/v/X8nfBzeKCAw&start=0&loop=0&showinfo=0&autohide=0&modestbranding=0&autoplay=1&version=3&egm=1&rel=0&iv_load_policy=3?hd=0&controls=1autohide=1&feature=player_detailpage" type="application/x-shockwave-flash" allowFullScreen="true" wmode="transparent" width="100%" height="100%" style="position:fixed; width:100%; height:100%;">
+    </embed>
+    </object>
+    -->
+</div>
+
+<div id="content">
+
+	<div class="title">
+        <h1>filosofía</h1>
+		<div class="show">
+        <div id="ocultar"></div><div id="mostrar"></div>
+		</div>
+	</div>
+
+	<div class="text">
+	<ul>
+    	<li>
+        <p><b>Oxygen Events</b> es una empresa de eventos que organiza actividades de motivación y trabajo,<br />
+        reuniones corporativas y eventos especiales, para empresas y grupos.</p>
+        
+        <p>Estamos especializados en actividades al aire libre.<br />
+        Queremos compartir nuestra experiencia de 10 años, junto con nuestra creatividad y nuestra pasión.</p>
+        
+        <p>Entendemos que cada proyecto es único.<br/>
+        Ofrecemos un enfoque de 360º que se adapta eficazmente a cada cliente para conseguir el éxito del evento.</p>
+        </li>
+        <li>
+        <p>Hacemos lo que nos gusta y lo hacemos en un ambiente saludable en contacto con la naturaleza para disfrutar y desarrollar las relaciones personales.</p>
+        
+        <p>Si en el trabajo las cosas no salen como esperas es porque necesitas Oxygen Events.</p>
+        
+        <p><b>¿Quieres que tus invitados vivan una experiencia inolvidable?</b><br/>
+        Ofréceles un poco de Oxygen Events.</p>
+        </li>
+        <li>
+        <p><b>¿Sientes que es hora de abrir la mente y cambiar de punto de vista?</b><br/>
+        Toma un poco de Oxygen Events.</p>
+        
+        <p>Si el personal de tu empresa necesita desarrollar sus dotes de liderazgo, aumentar las relaciones entre departamentos, motivarse e inspirarse, mejorar la comunicación, transformarse en un verdadero equipo de trabajo…<br/>unas dosis de Oxygen Events ayudará a conseguirlo.</p>
+        </li>
+        <li>
+        <p><b>¿Quieres que estén orgullosos de pertenecer a un equipo ganador?</b><br/>
+        Cuenta con Oxygen Events.</p>
+        
+        <p><b>Oxygen</b> Events ayudará a todos a ser conscientes de su propio potencial.</p>
+        
+        <p><b>Oxygen Events está en</b></p>
+        
+        <p>
+        <span><a href="oxygen-en-agua.html">EN AGUA</a></span>
+        <span><a href="oxygen-en-fuego.html">EN FUEGO</a></span>
+        <span><a href="oxygen-en-tierra.html">EN TIERRA</a></span>
+        <span><a href="oxygen-en-aire.html">EN AIRE</a></span>
+        </p>
+        
+        <p style=" clear:both"><p><b>Oxygen Events</b> es aire fresco para tu empresa.</p></p>
+        </li>
+	</ul>
+    </div>
+    
+</div>      
+
+</body>
+</html>

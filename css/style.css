@@ -1,0 +1,87 @@
+* { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; *behavior:url(boxsizing.htc); }
+html, body {margin:0;padding:0;background:#fff;line-height:1;font-family:Arial, "OstrichSans-Black", Helvetica, sans-serif; overflow-x:hidden}
+h1, h3 { margin:0; text-align:left;}
+h2{position:relative; margin:0 auto; color:#000; top:10px; text-align:center; text-transform:uppercase; z-index:100; font:45pt/130pt 'Metropolis1920', sans-serif;}
+h5{position:relative; width:100%; margin:20px 0; padding:0; font:35pt/38pt 'Asche-Bold', sans-serif; text-transform:uppercase; text-align:center; letter-spacing:2pt; }
+p {margin:0;}
+img{border:none;}
+
+a { color:#fff; font-style:italic; }
+blockquote { background:#fff; margin:0 0 20px;padding:5px 20px; }
+pre {white-space:pre-wrap; white-space:-moz-pre-wrap;  white-space:-pre-wrap; white-space:-o-pre-wrap; word-wrap:break-word;}
+.box { background:#444; background:rgba(0,0,0,.6);padding:20px;border-radius:5px;margin-bottom:20px;}
+
+.clear{position:relative; width:100%; height:20px;}
+
+/* font face*/
+@font-face {font-family: 'Metropolis1920';src: url('../font/Metropolis1920.eot');}
+@font-face {font-family: 'Metropolis1920';src: url('../font/Metropolis1920.woff') format('woff'),url('../font/Metropolis1920.svg#Metropolis1920') format('svg');}
+
+@font-face {font-family: 'Asche-Bold';src: url('../font/Asche-Bold.eot');}
+@font-face {font-family: 'Asche-Bold';src: url('../font/Asche-Bold.woff') format('woff'),url('../font/Asche-Bold.svg#Asche-Bold') format('svg');}
+
+/*---------scroll bar-----------*/
+
+::-webkit-scrollbar{margin-right:5px;background-color:#ccc;width:10px; box-shadow:2px 2px 3px #999 inset;}
+::-webkit-scrollbar-track{-webit-box-shadow:0 0 2px #ccc;box-shadow:0 0 2px #ccc;}
+::-webkit-scrollbar-thumb{border:1px #ccc solid;background:#777;-webit-box-shadow:0 0 3px #666;box-shadow:0 0 3px #666inset;-webit-transition:all .3s ease-out;transition:all .3s ease-out;}::-webkit-scrollbar-thumb:window-inactive{background:#bbb;box-shadow:0 0 8px #999 inset;}
+::-webkit-scrollbar-thumb:hover{background:#999;}
+
+.fullscreenPage{position:fixed; width:60px; height:35px; bottom:5px; left:10px; padding:5px; z-index:2000;}
+.on{ border:none; width:20px; height:20px; margin-right:0px; padding:0px; background: url(../img/fullscreen.jpg) no-repeat;}
+.off{ border:none; width:20px; height:20px; margin:0; padding:0px; background: url(../img/fullscreenOff.jpg) no-repeat;}
+
+.content{margin:0;padding:0; width:100%; height:100%; top:0; left:0; background: url(../BG/BG1.jpg); overflow:hidden}
+
+.title{position:relative; width:760px; height:160px; background:url(../img/h1.png) no-repeat; margin:auto; padding:0px 0; top:-80px; z-index:110;}
+.title h1 {font:58pt/130pt 'Metropolis1920', sans-serif; text-transform:uppercase; text-shadow: 0 0 4px #999;}
+.title h3 {font:58pt/130pt 'Metropolis1920', sans-serif; text-transform:uppercase; text-shadow: 0 0 4px #999; margin-top:80px; padding:0;}
+
+.wrap{position:relative; width:960px; margin:auto; top:-70px; z-index:100;}
+
+.subtitle {position:relative; width:100%; margin:0 auto; height:150px; top:-10px; }
+.subtitle h2 span{position:relative; background:url(comillas.png) no-repeat; width:150px; height:130px; padding-top:-40px; display:inline-block;}
+.subtitle h2 .right{background:url(../img/comillasRight.png) no-repeat; margin-left:-70px; float:right;}
+.subtitle h2 .left{background:url(../img/comillasLeft.png) no-repeat;margin-right:-70px;float:left; }
+.comillas{ width:150px; height:130px; padding-top:-40px;  opacity:.3; }
+.h2Subline {position:relative; width:100%; text-align:center; top:-30px; text-transform:uppercase; letter-spacing:1pt; font:14pt "Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+.agravios{position:relative; width:100%; height:890px;}
+.agravios ul{ list-style-type:none;}
+.agravios ul li{position:relative; float:left; width:260px; height:350px; padding:0; margin:20px; /*border-right:1px dotted #ccc;*/}
+.agravios ul li img{ position:relative; width:100%; height:220px;  padding:0 20px; margin: 0;}
+.agravios ul li p{ position:relative; padding:10px; color:#999; font:12pt/16pt "Trebuchet MS", Arial, Helvetica, sans-serif; text-align:center;}
+.headerAgravios{ position:relative; font-style:italic; font-size:16pt; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; top:20px;  color:#000; text-align:center; text-transform:uppercase;}
+
+.incentives {position:relative; width:890px; height:auto; padding:0; margin:10px auto;}
+.incentives p{ position:relative; padding:10px 0 0 0; color:#999; font:12pt/16pt "Trebuchet MS", Arial, Helvetica, sans-serif; text-align:center; top:-30px; }
+.incentives a{color:#999; text-decoration:underline;}
+.incentives a:hover{text-transform:uppercase;}
+
+.incentiveIMG{position:relative; width:100%; padding:0; margin:0; text-align:center;}
+
+.incentives ul{ position:relative; width:100%; height:270px; list-style-type:none;}
+.incentives ul li{position:relative; float:left; width:260px; height:270px; padding:0; margin:5px; text-align:center; font:12pt/16pt "Trebuchet MS", Arial, Helvetica, sans-serif; color:#999; text-transform:uppercase}
+.incentives ul li img{ position:relative; width:100%; height:220px;  padding:0; margin:0 0 10px 0; /*border:10px solid #353535*/}
+
+.logos{position:relative; width:100%; height:auto; margin:0; padding:0; bottom:40px;}
+.logos ul{ list-style-type:none; bottom:100px;}
+.logos ul li img{position:relative; float:left; width:150px; height:150px; padding:10px;}
+
+.elemets{position:relative; width:100%; top:0; height:400px; background:url(../BG/BG2.jpg); margin-top:-240px; border-top: 5px solid #fff; border-bottom: 5px solid #fff; box-shadow:0 0 10px 5px  #aaa;}
+.elemets ul{ list-style-type:none; width:1000px; margin:0 auto; background:#0F3}
+.elemets ul li{position:relative; float:left; width:200px; height:350px; padding:0; margin:20px; top:80px; color:#FFF; /*border-right:1px dotted #ccc;*/}
+.elemets ul li img{ position:relative; width:100%; height:160px;  padding:0 20px; margin: 0;}
+.elemets ul li p{ position:relative; padding:10px; color:#fff; font:30pt/40pt "Metropolis1920", Arial, Helvetica, sans-serif; text-align:center;}
+.elemets ul li b{ position:relative; font-style:italic; font-size:16pt; top:30px;  color:#fff; text-align:center;}
+
+footer, .footer{position:relative; width:100%; height:110px; margin:0; font:40pt/90pt "Metropolis1920", Arial, Helvetica, sans-serif; color:#fff; text-align:center; text-transform:uppercase; z-index:100; background:url(../BG/BG3.jpg);} /*border-top: 1px solid #292929;*/
+
+#video{overflow:hidden;position:fixed;height:100%;width:100%;top:0;left:0; z-index:120; overflow:hidden; background:#000; cursor:pointer;}
+
+.skip a{position:fixed; width:auto; height:auto; padding:10px 10px 5px 12px; margin:0; right:15px; bottom:15px; background:rgba(0,0,0,0.8); color:#fff; font:14pt 'Metropolis1920', Arial, Helvetica, sans-serif; text-decoration:none; cursor:url(../img/cancel.png),url(myBall.cur),auto; z-index:130;}
+.skip a:hover{color:#000;}
+
+.logoVideo{position:absolute; width:100%; height:310px; text-align:center; top:25%; opacity:0.7; z-index:1000;}
+.logoVideo a{text-decoration:none; font:18pt "Trebuchet MS", Arial, Helvetica, sans-serif; letter-spacing:7pt; cursor:default}
+.logoVideo p{ border-bottom:1px solid #fff; border-top:1px solid #fff; width:220px; margin:0 auto; padding:10px 0 10px 5px; text-transform:uppercase; cursor:url(../img/cancel.png),url(myBall.cur),auto;}
